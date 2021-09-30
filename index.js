@@ -256,8 +256,8 @@ async function starts() {
 			const mdata = await client.groupMetadata(anu.jid)
 			console.log(anu)
 			if (anu.action == 'add') {
-				num = anu.participants[0]
-				teks = `HOLAA!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『Bienvenido A *${mdata.subject}*』\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*`
+num = anu.participants[0]
+				teks = `LLEGAS TARDE!! @${num.split('@')[0]} ¿COMO ESTAS?😃\n\n『TE DOY LA BIENVENIDA A *${mdata.subject}*』\n\nUn gusto que estés aca 🤗\n\n_por favor lee las reglas del grupo para no ser eliminado🧐_\n\n*cualquier duda hablar con drogo o los demás admins 🥳*`
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
